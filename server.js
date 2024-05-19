@@ -3,9 +3,9 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 const cors = require('cors'); // Import the cors middleware
-const listRoutes = require('./routes/listRoutes');
-const userRoutes = require('./routes/userRoutes');
-const emailRoutes = require('./routes/emailRoutes');
+// const listRoutes = require('./routes/listRoutes');
+// const userRoutes = require('./routes/userRoutes');
+// const emailRoutes = require('./routes/emailRoutes');
 const { errorHandler } = require('./middlewares/errorHandler');
 const v1route = require('./routes/v1/index');
 const apiV1Routes = require("./routes/index");
@@ -15,7 +15,7 @@ dotenv.config();
 const app = express();
 
 const corsConfig = {
-  origin: "  https://lively-brigadeiros-a4ddd9.netlify.app/",
+  origin: "  https://thunderous-pavlova-31149b.netlify.app/",
   // http://localhost:5173
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE"],
